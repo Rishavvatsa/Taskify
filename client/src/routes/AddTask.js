@@ -22,7 +22,7 @@ const AddTask = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tasks/add",
+        "https://taskify-m3ob.onrender.com/api/tasks/add",
         { name, description, dueDate, priorityLevel },
         {
           headers: {

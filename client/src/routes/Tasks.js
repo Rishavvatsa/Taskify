@@ -21,11 +21,14 @@ const Tasks = () => {
   useEffect(() => {
     const getTasks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/tasks/all", {
-          headers: {
-            Authorization: token,
-          },
-        });
+        const res = await axios.get(
+          "https://taskify-m3ob.onrender.com/api/tasks/all",
+          {
+            headers: {
+              Authorization: token,
+            },
+          }
+        );
 
         const userTasks = res.data.tasks;
         setTasks(userTasks);

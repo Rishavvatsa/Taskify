@@ -19,11 +19,14 @@ const Profile = () => {
   useEffect(() => {
     const userProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/me", {
-          headers: {
-            Authorization: token,
-          },
-        });
+        const res = await axios.get(
+          "https://taskify-m3ob.onrender.com/api/user/me",
+          {
+            headers: {
+              Authorization: token,
+            },
+          }
+        );
 
         const me = res.data.user;
         setProfile(me);

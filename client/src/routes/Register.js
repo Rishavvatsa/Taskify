@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/user/register", {
+      .post("https://taskify-m3ob.onrender.com/api/user/register", {
         username,
         email,
         password,

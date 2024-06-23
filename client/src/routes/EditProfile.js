@@ -21,7 +21,7 @@ const EditProfile = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/user/me", {
+      .get("https://taskify-m3ob.onrender.com/api/user/me", {
         headers: {
           Authorization: token,
         },
@@ -53,7 +53,7 @@ const EditProfile = () => {
 
     await axios
       .put(
-        `http://localhost:5000/api/user/me/edit/${id}`,
+        `https://taskify-m3ob.onrender.com/api/user/me/edit/${id}`,
         { username, email },
         {
           headers: {

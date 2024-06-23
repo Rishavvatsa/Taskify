@@ -22,7 +22,7 @@ const UpdateTask = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/tasks/${id}`, {
+      .get(`https://taskify-m3ob.onrender.com/api/tasks/${id}`, {
         headers: {
           Authorization: token,
         },
@@ -64,7 +64,7 @@ const UpdateTask = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `https://task-management-server-rho-ten.vercel.app/api/tasks/update/${id}`,
+        `https://taskify-m3ob.onrender.com/api/tasks/update/${id}`,
         { name, description, dueDate, priorityLevel },
         {
           headers: {

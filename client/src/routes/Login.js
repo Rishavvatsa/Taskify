@@ -26,7 +26,10 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/user/login", { email, password })
+      .post("https://taskify-m3ob.onrender.com/api/user/login", {
+        email,
+        password,
+      })
       .then((res) => {
         console.log(res);
         setError("");

@@ -20,11 +20,14 @@ const User = ({ profile }) => {
 
   const handleDeleteProfile = async (userId) => {
     await axios
-      .delete(`http://localhost:5000/api/user/me/delete/${userId}`, {
-        headers: {
-          Authorization: token,
-        },
-      })
+      .delete(
+        `https://taskify-m3ob.onrender.com/api/user/me/delete/${userId}`,
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      )
       .then((res) => {
         if (res.data.message) {
           localStorage.removeItem("user");

@@ -32,7 +32,7 @@ const AllTasks = ({ tasks }) => {
 
   const handleDeleteTask = async (taskId) => {
     await axios
-      .delete(`http://localhost:5000/api/tasks/delete/${taskId}`, {
+      .delete(`https://taskify-m3ob.onrender.com/api/tasks/delete/${taskId}`, {
         headers: {
           Authorization: token,
         },

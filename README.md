@@ -26,4 +26,4 @@ This is a Full Stack Task Management application developed as an assignment for 
 ### Backend
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Rishavvatsa/Taskify.git

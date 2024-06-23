@@ -9,12 +9,12 @@ This is a Full Stack Task Management application developed as an assignment for 
 - **Styling**: CSS
 
 ## Features
-- User Authentication
-- Add New Task
-- View All Tasks
-- Update Task
-- Delete Task
-- Responsive Design
+- **User Authentication**: Secure user login and registration to manage access.
+- **Add New Task**: Allows users to create new tasks with details like name, description, due date, and priority level.
+- **View All Tasks**: Displays all tasks in a structured format with options to filter or sort.
+- **Update Task**: Enables users to edit existing tasks to update information or status.
+- **Delete Task**: Provides functionality to remove tasks from the task list.
+- **Responsive Design**: Ensures the application works well on various devices, including desktops, tablets, and mobile phones.
 
 ## Prerequisites
 - Node.js
@@ -27,3 +27,4 @@ This is a Full Stack Task Management application developed as an assignment for 
 1. Clone the repository:
    ```sh
    git clone https://github.com/Rishavvatsa/Taskify.git
+   cd Client

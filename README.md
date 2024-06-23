@@ -28,3 +28,16 @@ This is a Full Stack Task Management application developed as an assignment for 
    ```sh
    git clone https://github.com/Rishavvatsa/Taskify.git
    cd Client
+2. Install the required dependencies:
+ ```sh
+   npm install
+```
+## API Endpoints
+- Authentication
+- POST /api/auth/register: Register a new user
+- POST /api/auth/login: Log in an existing user
+### Tasks
+- GET /api/tasks: Get all tasks
+- POST /api/tasks: Create a new task
+- PUT /api/tasks/:id: Update a task
+- DELETE /api/tasks/:id: Delete a task
